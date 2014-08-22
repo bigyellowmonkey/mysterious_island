@@ -8,8 +8,8 @@ app = Flask(__name__)
 def hello():
 	name = "User1"
 	links = ['Listings', 'Leases',
-			'Projects', 'Associates',
-			'Company', 'Press', 'Blog', 'Contact']
+			'Pre-Construction', 
+			'Company', 'Contact']
 	return render_template('index.html', name=name, links=links)
 
 if __name__ == "__main__":
