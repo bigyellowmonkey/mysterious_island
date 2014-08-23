@@ -1,0 +1,51 @@
+     1	22:24	ls
+     2	22:24	cd reselitegit/
+     3	22:24	ls
+     4	22:24	cd projectElite/
+     5	22:24	ls
+     6	22:56	ls
+     7	23:31	ls
+     8	23:31	cd static/
+     9	23:31	ls
+    10	23:31	cd img/
+    11	23:31	ls
+    12	23:31	..
+    13	23:31	ls
+    14	23:31	..
+    15	23:31	ls
+    16	23:31	ls
+    17	23:32	git add .
+    18	23:32	git commit
+    19	23:32	git commit
+    20	23:32	git commit -m 001
+    21	23:32	git commit -m "001"
+    22	23:32	h
+    23	23:33	git pull orgin-master
+    24	23:33	git pull origin master
+    25	23:35	ls
+    26	23:35	cd static/
+    27	23:35	ls
+    28	23:35	cd img/
+    29	23:35	ls
+    30	23:37	h
+    31	23:37	cd ...
+    32	23:37	cd ..
+    33	23:37	cd .
+    34	23:37	cd ..
+    35	23:37	git add .
+    36	23:37	git status
+    37	23:38	git add .
+    38	23:38	git commit
+    39	23:38	git commit -m "adding c21 img fotter"
+    40	23:38	git pull orgin master
+    41	23:38	git push orgin master
+    42	23:39	git push origin master
+    43	23:41	vi templates/base.html
+    44	23:43	git add .
+    45	23:43	git commit
+    46	23:43	git commit -m "syntx fix"
+    47	23:43	git pull
+    48	23:43	git pull orgin master
+    49	23:44	git push orgin master
+    50	23:44	git push origin master
+    51	23:44	h > history.txt

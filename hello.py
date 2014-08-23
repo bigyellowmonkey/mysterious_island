@@ -9,7 +9,7 @@ def hello():
 	name = "User1"
 	links = ['Listings', 'Leases',
 			'Pre-Construction', 
-			'Company', 'Contact']
+			'About Us', 'Contact']
 	return render_template('index.html', name=name, links=links)
 
 if __name__ == "__main__":
