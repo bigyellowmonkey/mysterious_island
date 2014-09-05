@@ -14,6 +14,12 @@ def contacts():
 	
 	return render_template('Contact.html')
 
+@app.route('/Contact.html' , methods = ['GET', 'POST'])
+def map():
+	
+	return render_template('map.html')
+
+	
 	
 if __name__ == "__main__":
 	app.run()
