@@ -3,51 +3,40 @@
 
 {% block content %}
 
-<div class="container"></div><div class="row">
-    <div class="container">
-         <h1>Contact us</h1>
-
-        <div class="control-group">
-            <div class="controls">
-                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-
-                    <input class="col-md-12" placeholder="Full name" id="inputIcon" type="text" required="required">
-                </div>
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-
-                    <input class="col-md-12" placeholder="Your Email" id="inputIcon" type="email" required="required">
-                </div>
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-sm"></i></span>
-
-                    <input class="col-md-12" placeholder="Telephone" id="inputIcon" type="tel">
-                </div>
-            </div>
-        </div>
-        <div class="btn-toolbar">
-            <div class="btn-group" required="required">
-                <button class="btn btn-default" href="#"><i class="glyphicon glyphicon-coffee"></i> Questiadfasdfasdfon</button>
-                <button class="btn btn-default" href="#"><i class="glyphicon glyphicon-plus-sign-alt"></i> Suggestions</button>
-                <button class="btn btn-default" href="#"><i class="glyphicon glyphicon-stethoscope"></i> Product Support</button>
-                    <button class="btn btn-default" href="#"><i class="glyphicon glyphicon-suitcase"></i> Job application</button>
-            </div>
-        </div>
-        <div class="controls">
-            <textarea id="message" name="message" class="col-md-12" placeholder="Your Message" rows="5" required="required"></textarea>
-        </div>
-        <p>
-            <label label-default="" class="checkbox">
-                <input type="checkbox">Sign up for our newsletter</label>
-            <button class="btn btn-primary" type="button">Send</button>
-        </p>
-    </div>
+<div class="container" style="padding-top: 80px;">
+	<div class="row">
+<!-- address and submit form -->
+		<div class="col-sm-4">
+		<h3>Drop me a line!</h3>
+		<hr>
+		<address>
+		<strong>Email:</strong> <a href="mailto:#"> name@domain.com</a><br><br>
+		<strong>Phone:</strong> (555)123-4567
+		</address>
+		<form id="contact" method="post" class="form" role="form">
+			<div class="row">
+			<div class="col-xs-6 col-md-6 form-group">
+			<input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+			</div>
+			<div class="col-xs-6 col-md-6 form-group">
+			<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+			</div>
+			</div>
+		<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+		<br />
+			<div class="row">
+			<div class="col-xs-12 col-md-12 form-group">
+			<button class="btn btn-primary pull-right" type="submit">Submit</button>
+			</form>
+			</div>
+			</div>
+		</div>
+		
+<!-- map -->		
+		<div class="col-sm-8 contact-form">
+		
+		</div>
+	</div>
 </div>
 
 
