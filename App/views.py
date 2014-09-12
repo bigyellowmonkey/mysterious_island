@@ -1,11 +1,6 @@
-import os
-from flask import Flask
-from flask import render_template
-from flask.ext.mail import Message
-from app import app, mail
-from Config import ADMINS
-
-app = Flask(__name__)
+from flask import render_template, flash, redirect
+from app import app
+from forms import MailForm
 
 @app.route('/')
 def index():
@@ -14,16 +9,11 @@ def index():
 @app.route('/Contact' , methods = ['GET', 'POST'])
 @app.route('/Contact.html' , methods = ['GET', 'POST'])
 def contacts():
-	
-	return render_template('Contact.html')
+	##form = MailForm()
+	return render_template('Contact.html'
+		)
 
 @app.route('/Contact.html' , methods = ['GET', 'POST'])
 def map():
 	
 	return render_template('map.html')
-
-	
-	
-if __name__ == "__main__":
-	app.run()
- 
