@@ -1,6 +1,9 @@
 import os
 from flask import Flask
 from flask import render_template
+from flask.ext.mail import Message
+from app import app, mail
+from Config import ADMINS
 
 app = Flask(__name__)
 
