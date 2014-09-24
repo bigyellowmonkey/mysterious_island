@@ -11,8 +11,9 @@ def index():
 def contacts():
 	form = MailForm()
 	##form.nameid.data = form.validate_on_submit()
-	if form.validate_on_submit():
-		form.nameid.data = 'wtf-name'
+	if request.method == 'POST':
+		form.nameid.data = 'POST'
+		form.email.data = 'someshit'
 	
 	return render_template('Contact.html'
 		,form = form)
