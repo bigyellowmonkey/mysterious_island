@@ -13,7 +13,19 @@ def contacts():
 	return render_template('Contact.html'
 		)
 
-@app.route('/Contact.html' , methods = ['GET', 'POST'])
+@app.route('/tmp.html' , methods = ['GET', 'POST'])
+def tmp():
+	##form = MailForm()
+	return render_template('tmp.html'
+		)
+
+
+
+
+
+#@app.route('/Contact.html' , methods = ['GET', 'POST'])
+
+
 def map():
 	
 	return render_template('map.html')
