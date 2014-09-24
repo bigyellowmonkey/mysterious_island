@@ -9,9 +9,13 @@ def index():
 @app.route('/Contact' , methods = ['GET', 'POST'])
 @app.route('/Contact.html' , methods = ['GET', 'POST'])
 def contacts():
-	##form = MailForm()
+	form = MailForm()
+	##form.nameid.data = form.validate_on_submit()
+	if form.validate_on_submit():
+		form.nameid.data = 'wtf-name'
+	
 	return render_template('Contact.html'
-		)
+		,form = form)
 
 @app.route('/tmp.html' , methods = ['GET', 'POST'])
 def tmp():
@@ -20,12 +24,3 @@ def tmp():
 		)
 
 
-
-
-
-#@app.route('/Contact.html' , methods = ['GET', 'POST'])
-
-
-def map():
-	
-	return render_template('map.html')

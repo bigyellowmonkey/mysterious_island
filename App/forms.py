@@ -1,7 +1,8 @@
 from flask.ext.wtf import Form
-from wtforms import TextField, BooleanField
+from wtforms import StringField, BooleanField, TextAreaField
+from wtforms.validators import Required, Email
 
 class MailForm(Form):
-	name = TextField('Name')
-	email = TextField('Email')
-	message = TextField('Message')
+	nameid = StringField('Name', validators = [Required()])
+	email = StringField('Email', validators = [Email()])
+	message = TextAreaField('Message', validators = [Required()])
