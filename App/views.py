@@ -14,6 +14,10 @@ def index():
 def contacts():
 	form = MailForm()
 	#form.nameid.data = form.validate_on_submit()
+	
+	print form.validate()
+	print form.errors
+	
 	if request.method == 'POST' and form.validate():
 		#form.nameid.data = 'vlad!'
 		msg = Message('New Inquiry from ' + form.nameid.data, sender = ADMINS[0], recipients = EMAIL_LANDER)
