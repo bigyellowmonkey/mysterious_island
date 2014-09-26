@@ -3,7 +3,7 @@ from app import app, mail
 from forms import MailForm
 from emails import send_email
 from flask.ext.mail import Message
-from config import ADMINS
+from config import ADMINS, EMAIL_LANDER
 
 @app.route('/')
 def index():
@@ -15,9 +15,9 @@ def contacts():
 	form = MailForm()
 	##form.nameid.data = form.validate_on_submit()
 	if request.method == 'POST':
-		msg = Message('yo wtf', sender = ADMINS[0], recipients = ADMINS)
-		msg.body = 'wtf'
-		msg.html = '<b>wtf</b>'
+		msg = Message('New Inquiry from ' + form.nameid.data, sender = ADMINS[0], recipients = EMAIL_LANDER)
+		msg.body = form.email.data
+		msg.html = '<b>'+form.email.data+'</b> </br>' + form.message.data
 		mail.send(msg)
 		
 	

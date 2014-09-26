@@ -19,3 +19,4 @@ MAIL_PASSWORD = 'Yong2012#'
 
 # administrator list
 ADMINS = ['residentialelites@gmail.com']
+EMAIL_LANDER = ['residentialelites@gmail.com', 'yongxzhou@gmail.com', 'sunny2030@gmail.com']
