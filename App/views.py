@@ -13,8 +13,9 @@ def index():
 @app.route('/Contact.html' , methods = ['GET', 'POST'])
 def contacts():
 	form = MailForm()
-	##form.nameid.data = form.validate_on_submit()
-	if request.method == 'POST':
+	#form.nameid.data = form.validate_on_submit()
+	if request.method == 'POST' and form.validate():
+		#form.nameid.data = 'vlad!'
 		msg = Message('New Inquiry from ' + form.nameid.data, sender = ADMINS[0], recipients = EMAIL_LANDER)
 		msg.body = form.email.data
 		msg.html = '<b>'+form.email.data+'</b> </br>' + form.message.data
@@ -26,7 +27,7 @@ def contacts():
 
 @app.route('/tmp.html' , methods = ['GET', 'POST'])
 def tmp():
-	##form = MailForm()
+	#form = MailForm()
 	return render_template('tmp.html'
 		)
 
