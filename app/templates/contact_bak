@@ -1,6 +1,32 @@
 {% extends "base.html" %}
 
 {% block head %}
+ <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+		var myLatlng = new google.maps.LatLng(43.640505, -79.394507)
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: myLatlng,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+		var marker = new google.maps.Marker({
+			  position: myLatlng,
+			  map: map,
+			  title: 'Office'
+		  });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
   <body>
 {% endblock %}
 

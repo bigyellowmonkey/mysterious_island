@@ -9,15 +9,16 @@
 		<meta charset="UTF-8">
 			<title>Page Redirection</title>
 	<body>
-		<h1> Thank you for visiting, our website is current under construction. <br>
-			Come back soon!
+	<h1> Thank you for visiting, our website is current under construction.
 	</h1>
 	</body>
 		</head>
 		<body>
 	<!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
 
-	<br>	
+	If you are not redirected automatically, follow the <a href='http://www.century21.ca/ken.yeung'>link </a>
+	
+<br>	
 <br>	
 <br>	
 <br>	
