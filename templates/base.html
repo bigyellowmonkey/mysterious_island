@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
 	<link href="static/css/bootstrap.css" rel="stylesheet">
 </head>
 
-<body> 
+<body>
 	<div class="navbar-wrapper">
       <div class="container">
 
@@ -29,17 +28,9 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-              	
-                <li><a href="#Listings">Listings</a></li>
-                
-                <li><a href="#Leases">Leases</a></li>
-                
-                <li><a href="#Pre-Construction">Pre-Construction</a></li>
-                
-                <li><a href="#About Us">About Us</a></li>
-                
-                <li><a href="/Contact.html">Contact</a></li>
-                
+              	{% for l in links %}
+                <li><a href="#{{ l }}">{{ l }}</a></li>
+                {% endfor %}
               </ul>
             </div>
           </div>
@@ -48,47 +39,45 @@
       </div>
     </div>
 
-		
-
-<div class="container" style="padding-top: 80px;">
-	<div class="row">
-		<div class="col-sm-4">
-		<h3>Drop me a line!</h3>
-		<hr>
-		<address>
-		<strong>Email:</strong> <a href="mailto:#"> name@domain.com</a><br><br>
-		<strong>Phone:</strong> (555)123-4567
-		</address>
-		</div>
-			
-			<div class="col-sm-8 contact-form">
-		<form id="contact" method="post" class="form" role="form">
-			<div class="row">
-			<div class="col-xs-6 col-md-6 form-group">
-			<input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
-			</div>
-			<div class="col-xs-6 col-md-6 form-group">
-			<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
-			</div>
-			</div>
-		<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
-		<br />
-			<div class="row">
-			<div class="col-xs-12 col-md-12 form-group">
-			<button class="btn btn-primary pull-right" type="submit">Submit</button>
-			</form>
-			</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
+		{% block content %}
+		{% endblock %}
 
 	<!-- FOOTER -->
-     
+      <footer  class="container marketing">
+	  <hr class="featurette-divider">
+	  <div class="row">
+        <div class="col-lg-4">
+          <img src="static/img/C21_small.png" alt="logo" >
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        <p><h4>DOWNTOWN OFFICE (Cityplace Branch)</h4>
+		16 Telegram Mews<br/>
+		Toronto, ON M5V 3Z4<br/>
+		Phone: (416) 551-9508<br/>
+		Fax: (416) 551-6073<br/>
+		After Hours: (416) 494-5955 [24 HR.]<br/>
+		<a href="mailto:ResidentialElite@gmail.com?Subject=Viewing%20Request" target="_top">ResidentialElite@gmail.com</a>
+		</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        <p><h4>UPTOWN OFFICE </h4>
+		1053 McNicoll Avenue<br/>
+		Toronto, ON M1W 3W6<br/>
+		Phone: (416) 494-5955<br/>
+		Fax: (416) 494-4977<br/>
+		<a href="mailto:ResidentialElite@gmail.com?Subject=Viewing%20Request" target="_top">ResidentialElite@gmail.com</a>
+		</p>
+
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	  
+		<p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Residential Elite, Inc.</p>
+
+      </footer>
+
+    
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->

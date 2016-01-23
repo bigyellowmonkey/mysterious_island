@@ -1,8 +1,8 @@
 from flask import render_template, flash, redirect, request
-from app import app, mail
+from app import app #, mail
 from forms import MailForm
-from emails import send_email
-from flask.ext.mail import Message
+#from emails import send_email
+#from flask.ext.mail import Message
 from config import ADMINS, EMAIL_LANDER
 
 @app.route('/')
@@ -21,8 +21,8 @@ def contacts():
 	if request.method == 'POST' and form.validate():
 		#form.nameid.data = 'vlad!'
 		msg = Message('New Inquiry from ' + form.nameid.data, sender = ADMINS[0], recipients = EMAIL_LANDER)
-		msg.body = form.email.data
-		msg.html = '<b>'+form.email.data+'</b> </br>' + form.message.data
+#		msg.body = form.email.data
+#		msg.html = '<b>'+form.email.data+'</b> </br>' + form.message.data
 		mail.send(msg)
 		
 	
