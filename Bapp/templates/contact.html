@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <body>
+{% endblock %}
+
+{% block content %}
+
+<div class="container" style="padding-top: 80px;">
+	<div class="row">
+<!-- address and submit form -->
+		<div class="col-sm-4">
+		<h3>Drop me a line!</h3>
+		<hr>
+		<address>
+		<strong>Email:</strong> <a href="mailto:ResidentialElite@gmail.com"> ResidentialElite@gmail.com</a><br><br>
+		<strong>Phone:</strong> (416) 551-9508
+		</address>
+		{{form.hidden_tag()}}
+		<form id="contact" method="post" class="form" role="form">
+			<div class="row">
+			<div class="col-xs-6 col-md-6 form-group">
+			<!--<input class="form-control"  name="name" placeholder="Name" type="text" required autofocus />-->
+			{{form.nameid(class_='form-control',placeholder='Name' )}}
+			{% for error in form.errors.nameid %}
+			<span style="color: red;">[{{error}}]</span>
+			{% endfor %}
+			
+			</div>
+			<div class="col-xs-6 col-md-6 form-group">
+			<!--<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />-->
+			{{form.email(class_='form-control',placeholder='email' )}}
+			{% for error in form.errors.email %}
+			<span style="color: red;">[{{error}}]</span>
+			{% endfor %}
+			</div>
+			</div>
+		<!--<textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>-->
+		
+		{{form.message(class_='form-control',placeholder='Message' )}}
+		<br />
+			<div class="row">
+			<div class="col-xs-12 col-md-12 form-group">
+			<input type="submit" class="btn btn-primary pull-right"  value="Send">
+			</form>
+			</div>
+			</div>
+		</div>
+		
+<!-- map -->		
+		<div class="col-sm-8 contact-form">
+		<div id="map_canvas"></div>
+		</div>
+	</div>
+</div>
+
+
+
+{% endblock %}

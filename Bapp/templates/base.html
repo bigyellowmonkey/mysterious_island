@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Residential Elite|Resale Expert|Real Experience</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="static/css/bootstrap.css" rel="stylesheet">
+	
+	{% block head %}
+	
+	{% endblock %}
+</head>
+
+<body>
+	<div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a style="padding-top :8px" class="navbar-brand" href="/"><img src="static/img/logo_small.png" alt="logo"  height="30"></a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+              	<li><a href="/tmp.html">Listings</a></li>
+                <li><a href="/tmp.html">Leases</a></li>
+                <li><a href="/tmp.html">Pre-Construction</a></li>
+                <li><a href="/tmp.html">About Us</a></li>
+				<li><a href="/tmp.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+		{% block content %}
+		{% endblock %}
+
+	<!-- FOOTER -->
+      <footer  class="container marketing">
+	  <hr class="featurette-divider">
+	  <div class="row">
+        <div class="col-lg-4">
+          <img src="static/img/TopTeam.png" alt="logo" >
+        </div><!-- /.col-lg-4 -->
+		
+		
+		<div class="col-lg-4">
+        <p><h4>DOWNTOWN OFFICE (HEADQUARTERS)</h4>
+		157 Dan Leckie Way
+		Toronto, ON M5V 4A8<br/>
+		Direct Line: +1 (647) 458-3268 (24Hrs)<br/>	
+		Phone: +1 (647) 797- 3628<br/>
+		Fax: +1 (647) 797-3627<br/>
+		Email: <a href="mailto:ResidentialElite@gmail.com?Subject=Viewing%20Request" target="_top">ResidentialElite@gmail.com</a>
+		</p>
+        </div><!-- /.col-lg-4 -->
+		<div class="col-lg-4">
+			<style>
+				#map {
+					width: 460px;
+					height: 300px;
+				}
+			</style>
+			<div id="map"></div>
+			<script>
+				function initMap() {
+					var officeLatLng= {lat: 43.63990,lng: -79.39801};
+					var mapDiv = document.getElementById('map');
+					var map = new google.maps.Map(mapDiv, {
+						center: officeLatLng,
+						zoom: 15
+					});
+					var marker = new google.maps.Marker({
+					position: officeLatLng,
+					map: map,
+					title: 'OFFICE'
+					});
+				}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+				async defer></script>
+
+			</p>
+
+		</div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+
+	<p class="pull-right"><a href="#">Back to top</a></p>
+	<p>&copy; 2016 Residential Elite, Inc.</p>
+
+	</footer>
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
