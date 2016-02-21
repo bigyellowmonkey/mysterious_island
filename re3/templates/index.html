@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+	<div class="item active">
+		<div class="fill" style="background-image:url('/static/img/pic3_resized.png');"></div> 
+		<div class="carousel-caption">
+			<!--	<h2>Caption 1</h2>-->
+		</div>
+	</div>
+	<div class="item">
+		<div class="fill" style="background-image:url('/static/img/p5_resized.png');"></div> 
+	</div>
+	<div class="item">
+
+		<div class="fill" style="background-image:url('/static/img/re3_resized_mid.jpg');"></div> 
+	</div>
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	<span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+	<span class="icon-next"></span>
+</a>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+	<!-- Marketing Icons Section -->
+	<div class="row">
+		<div class="col-lg-12" align="middle">
+			<h1 class="page-header">
+				Welcome to Residential Elite
+			</h1>
+			Visit us at 157 Dan Leckie Way Toronto, ON
+			<br/>
+			Our office is open on:
+			<br/>
+
+			MON - FRI: 10AM - 7PM<br/>
+			SAT:  11AM - 5PM<br/>
+			SUN:  11AM - 5PM<br/>
+			<br>
+
+			<br>
+		</div>
+		<!-- /.row -->
+		<!-- Service Tabs -->
+		<div class="row">
+			<div class="col-lg-16">
+
+				<br>
+				<h4 class="page-header">RE Services </h2>
+			</div>
+			<div class="col-lg-26">
+
+				<ul id="myTab" class="nav nav-tabs nav-justified">
+					<li class="active"><a href="#service-one" data-toggle="tab"> RE BROKERAGE SERVICE</a>
+					</li>
+					<li class=""><a href="#service-two" data-toggle="tab"> RE ROPERTY MANAGEMENT</a>
+					</li>
+					<li class=""><a href="#service-three" data-toggle="tab"> Interior Design</a>
+					</li>
+					<li class=""><a href="#service-four" data-toggle="tab"> Investment Managment</a>
+					</li>
+					<li class=""><a href="#service-five" data-toggle="tab"> Commercial Connect</a>
+					</li>
+				</ul>
+
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade active in" id="service-one">
+
+						<br>
+						<h5>Brokerage Service</h5>
+						<ul>	
+							<li> MLS Listing for sale, for lease   </li>
+							<li>End to end paperwork for all properties  </li>
+							<li>Competitive commission rates  </li>
+							<li>Customized comprehensive leases (Schedule A)  </li>
+							<li>Leading expertise in Toronto Co1  </li>
+							<li>Network of industry partners for ancillary services pre and post sales   </li> 
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+
+						</ul>
+					</div>
+
+					<div class="tab-pane fade" id="service-two">
+
+						<br>
+						<h5>Property Management</h5>
+						<ul>	
+							<li> Tenant screening & selection</li>
+							<li> Property marketing (print, datbase, online)</li>
+							<li> Rental income tax documents preparation</li>
+							<li> Inspections</li>
+							<li> Budget preparation</li>
+							<li> Condominium corporations clients</li>
+							<li> Repairs & Maintenance & Housekeeping </li>
+							<br>
+							<br>
+							<br>
+							<br>
+
+						</ul>
+
+					</div>
+
+					<div class="tab-pane fade" id="service-three">
+						<br>
+						<h5>Interior Design</h5>
+						<ul>	
+
+							<li>Renovations & repair</li>
+							<li>Installation of blinds and window coverings</li>
+							<li>Home staging</li>
+							<li>Furniture selection</li>
+							<li>Room makeover</li>
+							<li>Paint</li>
+							<li>Cleaning & housekeeping</li>
+							<li>Full consultation at any budget</li>
+							<li>100% satisfaction guaranteed</li>
+							<br>
+							<br>
+						</ul>
+					</div>
+
+					<div class="tab-pane fade" id="service-four">
+						<br>
+						<h5>Ivestment Management </h5>
+						<ul>	
+							<li>Valuation and appraisal </li>
+							<li>Comparable reports (market, NAV, Historical) </li>
+							<li>Accounting Services </li>
+							<li>Financial Statement preparation </li>
+							<li>Distressed properties, opportunistic funds </li>
+							<li>Power of sale </li>
+							<li>Financing </li>
+							<li>Expertise in both acquisition and disposition of properties, work together for desired returns </li>
+							<li>Incorporation, Ontario numbered company </li>
+							<li>Real estate investment analysis </li>
+							<li>Global investment opportunities </li>
+
+
+						</ul>
+
+					</div>
+
+					<div class="tab-pane fade" id="service-five">
+
+						<br>
+						<h5>Commerical Connect </h4>
+						<ul>	
+
+							<li>Connecting business sellers with buyers</li>
+							<li>Commercial lease negotiation</li>
+							<li>Vacant land</li>
+							<li>Licensing & Zoning consulting</li>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+
+							<br>
+						</ul>
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Portfolio Section -->
+		{% endblock %}
