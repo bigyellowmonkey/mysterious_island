@@ -31,6 +31,10 @@ def investment():
 def commercial_connectinvestment():
 	return render_template('commercial_connect.html')
 
+@app.route('/about.html')
+def about_us():
+	return render_template('about.html')
+
 
 
 
