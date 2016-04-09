@@ -10,6 +10,11 @@ def start():
 def index():
 	return render_template('index.html')
 
+@app.route('/index2.html')
+def index2():
+	return render_template('index2.html')
+
+
 @app.route('/brokerage_service.html')
 def brokerage_service():
 	return render_template('brokerage_service.html')
