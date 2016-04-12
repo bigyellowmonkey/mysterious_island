@@ -10,6 +10,47 @@ def start():
 def index():
 	return render_template('index.html')
 
+
+@app.route('/project_2016.html')
+def project_2016():
+	return render_template('project_2016.html')
+
+
+@app.route('/project_2017.html')
+def project_2017():
+	return render_template('project_2017.html')
+
+@app.route('/project_2018.html')
+def project_2018():
+	return render_template('project_2018.html')
+
+
+@app.route('/project_2019.html')
+def project_2019():
+	return render_template('project_2019.html')
+
+
+@app.route('/project_2020.html')
+def project_2020():
+	return render_template('project_2020.html')
+
+@app.route('/project_vip.html')
+def project_vip():
+	return render_template('project_vip.html')
+
+
+
+
+@app.route('/for_lease.html')
+def for_lease():
+	return render_template('for_lease.html')
+
+@app.route('/for_sale.html')
+def for_sale():
+	return render_template('for_sale.html')
+
+
+
 @app.route('/index2.html')
 def index2():
 	return render_template('index2.html')
